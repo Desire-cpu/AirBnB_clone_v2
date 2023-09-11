@@ -28,7 +28,7 @@ file { '/data/web_static/shared':
 
 exec { 'Creates fake index.html':
   path    => ['/usr/bin', '/usr/sbin', '/bin'],
-  command => 'echo "Hello Nginx!" > /data/web_static/releases/test/index.html',
+  command => 'echo "Holberton School" > /data/web_static/releases/test/index.html',
 }
 
 exec { 'Change user:group owner of index.html':
